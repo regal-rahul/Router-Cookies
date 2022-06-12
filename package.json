@@ -1,5 +1,22 @@
 {
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "name": "router-cookies",
+  "description": "Learning about router and cookies",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regal-rahul/Router-Cookies.git"
+  },
+  "author": "regal-rahul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/regal-rahul/Router-Cookies/issues"
+  },
+  "homepage": "https://github.com/regal-rahul/Router-Cookies#readme"
 }
