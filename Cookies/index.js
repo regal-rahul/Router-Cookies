@@ -11,6 +11,8 @@ app.get('/greet', (req, res) => {
 })
 app.get('/setname', (req, res) => {
     res.cookie('name', 'tommy');
+    res.cookie('animal', 'dog');
+    res.cookie('color', 'golden');
     res.send('Sent you a cookie');
 })
 
