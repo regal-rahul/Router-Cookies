@@ -3,7 +3,7 @@ const app = express();
 
 const cookieparser = require('cookie-parser');
 const cookieParser = require('cookie-parser');
-app.use(cookieParser());
+app.use(cookieParser('thisismysecret'));
 
 app.get('/greet', (req, res) => {
     const { name = 'No-name' } = req.cookies;
@@ -14,6 +14,10 @@ app.get('/setname', (req, res) => {
     res.cookie('animal', 'dog');
     res.cookie('color', 'golden');
     res.send('Sent you a cookie');
+})
+
+app.get('/getsignedcookies', (req, res) => {
+    res.cookie('fruit', 'grape', { signed: true });
 })
 
 app.listen(3000, () => {
